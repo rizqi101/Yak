@@ -375,6 +375,7 @@ namespace Yak.Model.Api
             try
             {
                 tmDbclient.GetConfig();
+
                 var movie = tmDbclient.GetMovie(imdbCode, MovieMethods.Images);
                 if (movie.ImdbId != null)
                 {
